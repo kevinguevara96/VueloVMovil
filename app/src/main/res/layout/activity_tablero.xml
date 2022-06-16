@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    tools:context=".TableroActivity">
+    
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ecuador_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            />
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avionicon1"
+
+            android:layout_centerVertical="true"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_marginTop="20dp"
+        android:paddingTop="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:id="@+id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/viajefig"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/rl1"
+
+        />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_below="@+id/id1">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/primary"
+            app:cardCornerRadius="15dp">
+
+
+            <TextView
+                android:id="@+id/jsonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+            </TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/menuColor"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

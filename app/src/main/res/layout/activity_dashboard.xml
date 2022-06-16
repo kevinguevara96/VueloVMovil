@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/tvSelectDates1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:hint="Escoga Fecha Vuelo"
+
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"/>
+
+        <EditText
+            android:id="@+id/edMaletas"
+            android:layout_marginTop="120dp"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Peso KG"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/edAsiento"
+            android:layout_marginTop="120dp"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="235dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Asientos"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+
+
+            />
+        <EditText
+            android:id="@+id/edtipoAsiento"
+            android:layout_marginTop="240dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:hint="Tipo Asiento"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+
+
+            />
+
+        <Button
+            android:id="@+id/reservaBtn"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="380dp"
+            android:background="@color/white"
+            android:text="Reservar Vuelo"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Bienvenido"
+            />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/menuColor"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
